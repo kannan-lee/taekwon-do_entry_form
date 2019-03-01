@@ -1,0 +1,76 @@
+*{
+	margin:0;
+	padding:0;
+}
+#container{
+	width:1200px;
+	background:silver;
+	border: 2px solid silver;
+	margin: 0 auto;
+}
+	header{
+		width:1180px;
+		background:linear-gradient(to right,#006633,#339933,#66cc66);
+		padding:10px 10px;
+		font-size:50px;
+		font-family:algerian, verdana, sans-serif;
+		color:white;
+	}
+	h1{
+		font-size:50px;
+		font-family:algerian, verdana, sans-serif;
+		color:black;
+		margin-bottom:10px;
+		text-align:center;
+		background:linear-gradient(to left,#006633,#339933,#006633);
+	}
+	section p{
+		font-size:20px;
+		font-family:arial, verdana, sans-serif;
+		color:black;
+		line-height:50px;
+		margin:50px 5px 50px 50px;
+		text-align:justify;
+	}
+	nav a{
+			text-decoration:none;
+			color:black;
+		}
+	nav	a:hover{
+			color:white;
+		}
+		nav ul{
+			list-style:none;
+		}
+		nav li{
+			padding:20px 0px;
+			font-size:30px;
+			float: left;
+			width:240px;
+			text-align:center;
+			background:linear-gradient(to left,silver,#f1f1f1,white);
+		}
+		nav li:hover{
+			background:linear-gradient(to right,#003300,#663300,#003300);
+		}
+		main{
+			background:silver;
+		}
+	aside{
+		background:linear-gradient(to right,#006633 10%,silver,#339933);
+		float:left;
+	}
+	section{
+		padding: 0 0 20px 0px;
+		width:100%;
+		height:100%;
+		float:right;
+		box-shadow:0 0 50px #339933 inset;
+	}
+	footer{
+			width:1200px;
+			font-size:25px;
+			color:white;
+			text-align:center;
+			background:linear-gradient(to right,#006633,silver,#006633);
+	}

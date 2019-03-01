@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>TAEKWON-DO ITF</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="images/logo.png">
+		
+</head>
+<body>
+<div id="transparent"></div>
+<div id="container">
+		<header>
+			<hl>TAEKWON-DO ITF TOURNAMENT</hl>
+			<a href="#"class="button-main" id="signup" onMouseOver="havl(1)" onMouseout="havl(0)" onclick="signup()"><span id="l">&#9997;</span>REGISTER</a>
+		</header>
+		<hr style="color:#343536;" width=100%/>
+		<nav>
+			
+		</nav>
+		<main>
+				
+				<aside>
+		
+				</aside>
+			<section>
+			
+			</section>
+			<div style="clear:both;"></div>
+
+		</main>
+		<hr style="color:#343536;"width=100%/>
+		<footer>
+		<p style="float:left;padding:20px;">copyright &copy; 2018</p> <p style="float:right;padding:20px;">kannan lee</p>
+		<div style="clear:both;"></div>
+		</footer>
+	</div>
+<div id="signup_popup" class="top" style="display:none">
+	<input type="button" class="exit" onclick="exit()" value="&times;">
+	<div style="clear:both;"></div>
+	<form action="links/register.php" enctype="multipart/form-data" method="post" class="form-default" name="register" onsubmit="return val()">
+		<center style="color:gold;">TAEKWON-DO ENTRY FORM</center><br/>
+		<input type="text" placeholder="NAME" class="form-default-input" name="name" required/>
+		<select name="represented" class="form-default-input" required>
+			<option value="" style="text-align:center;">REPRESENTED</option>
+			<option value="TAMIL_NADU" style="text-align:center;">&emsp;TAMIL-NADU</option>
+		</select><br/>
+		<center>DOB&thinsp;
+		<input type="date" placeholder="DOB" name="dob" max="2018-01-01" class="form-default-rad" required/>
+		<!--<input type="number" placeholder="DD" name="dobdd" class="form-default-date"></input>
+		<input type="number" placeholder="MM" name="dobmm" class="form-default-date"></input>
+		<input type="number" placeholder="YYYY" name="dobyyyy" class="form-default-date"></input>
+		&thinsp;&thinsp;<label  type="text" class="form-default-rad" name="age">AGE</label>--></center>
+		<center>GENDER :<input type="radio" name="gender" value="MALE" class="form-default-rad" checked/>MALE
+		<input type="radio" value="FEMALE" name="gender" class="form-default-rad"/>FEMALE</center>
+		<center><input type="number" placeholder="WEIGHT" name="weight" class="form-default-rad" required/><input type="number" placeholder="HEIGHT" name="height" class="form-default-rad" required/></center>
+		<select name="present_belt" class="form-default-input" required>
+			<option value="" style="text-align:center;">PRESENT BELT</option>
+			<option value="BLACK-IV DAN" style="text-align:center;">&emsp;BLACK-IV DAN</option>
+			<option value="BLACK-III DAN" style="text-align:center;">&emsp;BLACK-III DAN</option>
+			<option value="BLACK-II DAN" style="text-align:center;">&emsp;BLACK-II DAN</option>
+			<option value="BLACK-I DAN" style="text-align:center;">&emsp;BLACK-I DAN</option>
+			<option value="BLACK-STRIPE" style="text-align:center;">&emsp;BLACK-STRIPE</option>
+			<option value="RED" style="text-align:center;">&emsp;RED</option>
+			<option value="RED-STRIPE" style="text-align:center;">&emsp;RED-STRIPE</option>
+			<option value="BLUE" style="text-align:center;">&emsp;BLUE</option>
+			<option value="BLUE-STRIPE" style="text-align:center;">&emsp;BLUE-STRIPE</option>
+			<option value="GREEN" style="text-align:center;">&emsp;GREEN</option>
+			<option value="GREEN-STRIPE" style="text-align:center;">&emsp;GREEN-STRIPE</option>
+			<option value="YELLOW" style="text-align:center;">&emsp;YELLOW</option>
+			<option value="YELLOW-STRIPE" style="text-align:center;">&emsp;YELLOW-STRIPE</option>
+		</select><br/>
+		<center><input type="checkbox" name="event[]" value="SPARRING" class="form-default-rad"/>SPARRING&emsp;<!--<input type="checkbox" value="TULS" name="event[]" class="form-default-rad"/>TULS&emsp;<input type="checkbox" name="event[]" value="GROUP-TULS" class="form-default-rad"/>GROUP-TULS&emsp;<input type="checkbox" value="GROUP-SPARRIN" name="event[]" class="form-default-rad"/>GROUP-SPARRING--></center>
+		    <center>Before register read the <a id="tm" href="links/tandc.html">Terms & conditions</a>.</center>
+		<center>PHOTO : <input type="file" name="pic" /><input type="submit" value="REGISTER" class="form-default-button"></center><br/>
+	</form>
+</div>
+<script type="text/javascript" src="js/main_script.js"></script>
+</body>
+</html>
